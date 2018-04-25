@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "05d2b33150783c189131b6ac45b78302"
+build_time: [1524625319, 583968000]
+inputs:
+  "/Users/PIXERF_SG_WS_12/Projects/XCodeProjects/Others/TryJenkins/TryJenkins/ViewController.swift": [9223372036, 854775807]
+  "/Users/PIXERF_SG_WS_12/Projects/XCodeProjects/Others/TryJenkins/TryJenkins/AppDelegate.swift": [9223372036, 854775807]
