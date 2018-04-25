@@ -17,7 +17,7 @@ node('master') {
         ])
 
         // Build and Test
-        sh 'xcodebuild -scheme "TryJenkins" -workspace "TryJenkins.xcworkspace" -configuration "Debug" clean build test -destination "platform=iOS Simulator,name=iPhone 6,OS=10.1" -enableCodeCoverage YES | /usr/local/bin/xcpretty -r junit'
+        sh 'xcodebuild -scheme "TryJenkins" -workspace "TryJenkins.xcworkspace" -configuration "Debug" clean build test -destination "platform=iOS Simulator,name=iPhone 6s,OS=11.3" -enableCodeCoverage YES | /usr/local/bin/xcpretty -r junit'
 
         // Publish test restults.
         step([$class: 'JUnitResultArchiver', allowEmptyResults: true, testResults: 'build/reports/junit.xml'])
