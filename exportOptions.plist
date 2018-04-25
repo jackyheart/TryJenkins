@@ -6,8 +6,6 @@
     <true/>
     <key>method</key>
     <string>ad-hoc</string>
-    <key>teamID</key>
-    <string>JACKY TJOA</string>
     <key>uploadBitcode</key>
     <true/>
     <key>uploadSymbols</key>
