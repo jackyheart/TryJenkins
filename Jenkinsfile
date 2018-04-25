@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 node('iOS Node') {
 
     stage('Checkout/Build/Test') {
