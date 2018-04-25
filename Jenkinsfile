@@ -15,7 +15,7 @@ node('iOS Node') {
         ])
 
         // Build and Test
-        sh 'xcodebuild -scheme "TryJenkins" -configuration "Debug" build test -destination "platform=iOS Simulator,name=iPhone 6,OS=10.1" -enableCodeCoverage YES | /usr/local/bin/xcpretty -r junit'
+        sh 'xcodebuild -scheme "TryJenkins" -workspace "TryJenkins.xcworkspace" -configuration "Debug" clean build test -destination "platform=iOS Simulator,name=iPhone 6,OS=10.1" -enableCodeCoverage YES | /usr/local/bin/xcpretty -r junit'
 
         // Publish test restults.
         step([$class: 'JUnitResultArchiver', allowEmptyResults: true, testResults: 'build/reports/junit.xml'])
@@ -43,6 +43,6 @@ node('iOS Node') {
 
     stage ('Notify') {
         // Send slack notification
-        slackSend channel: '#my-team', message: 'TryJenkins - Successfully', teamDomain: 'my-team', token: 'my-token'
+        //slackSend channel: '#my-team', message: 'TryJenkins - Successfully', teamDomain: 'my-team', token: 'my-token'
     }
 }
