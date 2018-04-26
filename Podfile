@@ -10,13 +10,13 @@ target 'TryJenkins' do
   target 'TryJenkinsTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
   end
 
   target 'TryJenkinsUITests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'Quick'
-    pod 'Nimble'
   end
 
 end
