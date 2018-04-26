@@ -12,7 +12,7 @@ def simulator_device = 'iPhone 6s' // Name of the device type to use for tests
 // 3. If you want Slack notifications, return true in the functions below and set the Slack channel
 def slackChannel = '' //#general
 
-@Library('shared') _
+//@Library('shared') _
 
 def sendStartNotification() {
     // Send a Slack notification when the build starts?
