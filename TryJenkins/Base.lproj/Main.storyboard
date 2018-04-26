@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AKF-oS-H4v">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Jenkins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9I1-lB-KCJ">
-                                <rect key="frame" x="16" y="96" width="343" height="21"/>
+                                <rect key="frame" x="16" y="140" width="343" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="biu-GY-7ZY"/>
                                 </constraints>
@@ -28,11 +28,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGm-dW-m3W">
-                                <rect key="frame" x="148" y="328.5" width="78" height="30"/>
+                                <rect key="frame" x="148" y="350.5" width="78" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="kgv-RL-sCS"/>
                                 </constraints>
                                 <state key="normal" title="Try Jenkins"/>
+                                <connections>
+                                    <segue destination="J0i-BQ-jsG" kind="show" id="7NB-xz-eHf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,6 +48,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9EU-ws-HoH"/>
                     <connections>
                         <outlet property="btnAction" destination="dGm-dW-m3W" id="OMr-xx-xb5"/>
                         <outlet property="lblHello" destination="9I1-lB-KCJ" id="kXL-4H-wC0"/>
@@ -52,7 +56,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1079.2" y="133.5832083958021"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="whk-Jt-Zks">
+            <objects>
+                <viewController id="J0i-BQ-jsG" customClass="DetailViewController" customModule="TryJenkins" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XQB-oH-cXQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jen Details VC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gds-NS-X7Y">
+                                <rect key="frame" x="16" y="103" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="pfN-hS-RB5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWN-nn-V1c">
+                                <rect key="frame" x="158" y="143" width="59" height="30"/>
+                                <state key="normal" title="Alert Me"/>
+                                <connections>
+                                    <action selector="alertMe:" destination="J0i-BQ-jsG" eventType="touchUpInside" id="vl4-wH-gML"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gds-NS-X7Y" firstAttribute="leading" secondItem="OfM-VB-WFl" secondAttribute="leading" constant="16" id="3G8-vu-ygh"/>
+                            <constraint firstItem="nWN-nn-V1c" firstAttribute="top" secondItem="gds-NS-X7Y" secondAttribute="bottom" constant="19" id="VgH-ZW-SXz"/>
+                            <constraint firstItem="nWN-nn-V1c" firstAttribute="centerX" secondItem="OfM-VB-WFl" secondAttribute="centerX" id="d6u-Gx-Tmj"/>
+                            <constraint firstItem="gds-NS-X7Y" firstAttribute="top" secondItem="OfM-VB-WFl" secondAttribute="top" constant="39" id="iYc-j3-tFJ"/>
+                            <constraint firstItem="OfM-VB-WFl" firstAttribute="trailing" secondItem="gds-NS-X7Y" secondAttribute="trailing" constant="16" id="yow-5D-k7a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OfM-VB-WFl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f0j-xf-L9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1796" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Le-vN-1oP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AKF-oS-H4v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T99-Ao-dSl">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PA7-St-IhN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cm4-pp-Y0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313" y="134"/>
         </scene>
     </scenes>
 </document>

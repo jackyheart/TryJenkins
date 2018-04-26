@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680AFCCB2091ACA600E36B0A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680AFCCA2091ACA600E36B0A /* DetailViewController.swift */; };
 		6815EDD220901FEB00D27432 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6815EDD120901FEB00D27432 /* AppDelegate.swift */; };
 		6815EDD420901FEB00D27432 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6815EDD320901FEB00D27432 /* ViewController.swift */; };
 		6815EDD720901FEB00D27432 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6815EDD520901FEB00D27432 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		05B3F0CDC77127348E85CB3D /* Pods_TryJenkinsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TryJenkinsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB2E958337E8BA69EA900A8 /* Pods-TryJenkins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryJenkins.release.xcconfig"; path = "Pods/Target Support Files/Pods-TryJenkins/Pods-TryJenkins.release.xcconfig"; sourceTree = "<group>"; };
 		4FAFE38E645D57DC6A17EC9B /* Pods-TryJenkins.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryJenkins.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TryJenkins/Pods-TryJenkins.debug.xcconfig"; sourceTree = "<group>"; };
+		680AFCCA2091ACA600E36B0A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6815EDCE20901FEB00D27432 /* TryJenkins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryJenkins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6815EDD120901FEB00D27432 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6815EDD320901FEB00D27432 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				6815EDD120901FEB00D27432 /* AppDelegate.swift */,
 				6815EDD320901FEB00D27432 /* ViewController.swift */,
+				680AFCCA2091ACA600E36B0A /* DetailViewController.swift */,
 				6815EDD520901FEB00D27432 /* Main.storyboard */,
 				6815EDD820901FEC00D27432 /* Assets.xcassets */,
 				6815EDDA20901FEC00D27432 /* LaunchScreen.storyboard */,
@@ -462,6 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				680AFCCB2091ACA600E36B0A /* DetailViewController.swift in Sources */,
 				6815EDD420901FEB00D27432 /* ViewController.swift in Sources */,
 				6815EDD220901FEB00D27432 /* AppDelegate.swift in Sources */,
 			);
@@ -640,7 +644,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K63E82JPAC;
 				INFOPLIST_FILE = TryJenkins/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.coolheart.TryJenkins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -656,7 +663,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K63E82JPAC;
 				INFOPLIST_FILE = TryJenkins/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.coolheart.TryJenkins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -672,7 +682,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TryJenkinsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacky.ios.TryJenkinsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -689,7 +703,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TryJenkinsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacky.ios.TryJenkinsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -705,7 +723,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TryJenkinsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacky.ios.TryJenkinsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -721,7 +743,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TryJenkinsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacky.ios.TryJenkinsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
