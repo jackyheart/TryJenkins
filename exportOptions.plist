@@ -4,5 +4,7 @@
 <dict>
     <key>method</key>
     <string>development</string>
+    <key>teamID</key>
+    <string>K63E82JPAC</string>
 </dict>
 </plist>
