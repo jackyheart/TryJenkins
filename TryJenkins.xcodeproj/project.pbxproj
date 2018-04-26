@@ -766,7 +766,7 @@
 				6815EDF520901FEC00D27432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		6815EDF620901FEC00D27432 /* Build configuration list for PBXNativeTarget "TryJenkins" */ = {
 			isa = XCConfigurationList;
@@ -775,7 +775,7 @@
 				6815EDF820901FEC00D27432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		6815EDF920901FEC00D27432 /* Build configuration list for PBXNativeTarget "TryJenkinsTests" */ = {
 			isa = XCConfigurationList;
@@ -784,7 +784,7 @@
 				6815EDFB20901FEC00D27432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		6815EDFC20901FEC00D27432 /* Build configuration list for PBXNativeTarget "TryJenkinsUITests" */ = {
 			isa = XCConfigurationList;
@@ -793,7 +793,7 @@
 				6815EDFE20901FEC00D27432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

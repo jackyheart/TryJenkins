@@ -18,7 +18,7 @@ class TryJenkinsTests: QuickSpec {
         
         beforeEach {
             let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            viewController = storyboard.instantiateInitialViewController() as! ViewController
+            viewController = (storyboard.instantiateInitialViewController() as! UINavigationController).viewControllers[0] as! ViewController
             _ = viewController.view
         }
         
